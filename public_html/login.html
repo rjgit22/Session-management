@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!--	jQuery	-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--	bootstrap	-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!--	JPDP libs	-->
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+
+    <!-- login Js -->
+    <script type="text/javascript" src="resources/js/login.js"></script>
+
+    <!-- Common Js -->
+    <script type="text/javascript">
+    	myStatus = "out";
+    </script>
+    <script type="text/javascript" src="resources/js/common.js"></script>
+    <script type="text/javascript">checksession();</script>
+</head>
+<body>
+	<div class="container">
+	  
+		<nav class="navbar navbar-inverse" style="margin-top: 10px;padding: 10px;">
+		  
+		    
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="registration.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+		      <li><a href="forgot_password.html"><span class="glyphicon glyphicon-log-out"></span> Forget Password</a></li>
+		    </ul>
+
+		</nav>
+
+		<div class="page-header text-center">
+					<h1 class="text-primary">LOGIN</h1>
+		</div>
+
+		<form class="form-horizontal" method="post" style="margin-top: 100px;">
+
+				<div class="form-group">
+			      <label class="control-label col-lg-offset-2 col-lg-2" for="email">Email:</label>
+			      <div class="col-lg-5">
+			        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+			      </div>
+			    </div>
+
+			    <div class="form-group">
+			      <label class="control-label col-lg-offset-2 col-lg-2" for="pwd">Password:</label>
+			      <div class="col-lg-5">          
+			        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+			      </div>
+			    </div>
+			    
+			    <div class="form-group">        
+			      <div class="col-sm-offset-4 col-sm-10">
+			        <input type="button" class="btn btn-primary" id="login" value="Login" onclick="checkUser();">
+			      </div>
+			    </div>
+	  	</form>
+
+	</div>
+	 
+
+</body>
+</html>
